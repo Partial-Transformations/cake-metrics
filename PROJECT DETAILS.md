@@ -1,12 +1,19 @@
 # PROJECT DETAILS
 Project Lead: Derek Burgess
+
 Email: contact@derekburgess.com
+
 Phone: +1 412 417 9435
+
 URL: partialtransformations.com
 
+
 Project Member: Lu Zhu
+
 Role: CTO
+
 Email:
+
 
 # SUMMARY
 A toolset/framework for creating honeypot datasets (or, "rickroll data models") and environments. Think Marauder , but for Blue Teams. The basic idea would be to maintain this as a component of CI/CD and Sec, or deploy during an event to create confusion for attackers by misdirecting them to log-noisy, but high value looking network assets/data sets.
@@ -28,6 +35,13 @@ A couple of thoughts from Derek:
 - Lastly, do we deploy a reinforcement approach to enhance the output based on real attack data?
 
 # ML/AI REQUIREMENTS
+
+## PRIOR RESEARCH
+- https://arxiv.org/abs/2009.11208
+- https://www.hindawi.com/journals/scn/2020/8865474/
+- https://www.hindawi.com/journals/scn/2019/2627608/
+- https://www.rapid7.com/blog/post/2016/02/29/the-yellow-brick-road-to-machine-learning-with-honeypot-data-our-lessons-learned/
+
 
 ## USE OF OPEN AI
 - They ask specifically if we need/will use OpenAI credits. Can we make this work some how? Im sure there is a bias there.
