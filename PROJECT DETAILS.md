@@ -18,17 +18,6 @@ Email:
 # SUMMARY
 A toolset/framework for creating honeypot datasets (or, "rickroll data models") and environments. Think Marauder , but for Blue Teams. The basic idea would be to maintain this as a component of CI/CD and Sec, or deploy during an event to create confusion for attackers by misdirecting them to log-noisy, but high value looking network assets/data sets.
 
-## INSPIRATION
-From Derek: I recently helped my partner migrate 20 years of emails from "Outlook" to a private server. The reasons why are not as interesting as some of the "behavoirs" of data in the cloud observed by my non-technical partner. For one, "downloading" emails via IMAP, is not downloading anything... the data is by all definitions: "Ephemeral". 
-
-Of course data in transit is susceptal to man in the middle attacks and therefore, gains no advantage from being ephemeral, in this scenario.
-
-20 years of emails translates to 225,000 emails (or millions of parameters), or ~50gb of storage. This "compact" dataset, was able to move and be ingested by applications (email clients) in a reasonable amount of time, without leaving behind traces of its raw data (unless done so explicility by the end-user). 
-
-Training data sets, particually ones consiting of high value PII, would benefit from this behavoir.
-
-Lastly, as a long time hardware security nerd, having deployed Maraduer several times in training excersises- the idea of an ephemeral honey pot dataset, sounds like it could be a valuable tool for Blue Teams to bait and capture attackers.
-
 # THE TEAM
 ## Derek Burgess
 With 15 years of experience across IT. Derek leads clients through the challenges of digital transformation concerning data, privacy, and security. Having worked a wide range of relevant roles across; Help Desk, Product Design, Product Management, and Engineering, Derek has always pushed to introduce more data-driven techniques to those practices, while partnering across disciplines to design tooling and automation that empower teams to become more data-driven.
@@ -37,6 +26,17 @@ With 15 years of experience across IT. Derek leads clients through the challenge
 Derek and Lu first me working together on an internal tool that analyzed real time data from manufacutirng facilities and provided real time scheduling & production insights back to operators, managers, and other automation tools up/down stream.
 
 For Derek, he has always had an interest in Cybersecurity and even prior to the current advent of Consumer AI, was part of the Pwnagotchi/Bettercap communities, as well as endevors to create distributed ML processing of WPA encryption. He currently also consults for Fueled, a digital transformation agency, where he guides clients through data/analytics implementations.
+
+From Derek: 
+
+## INSPIRATION
+From Derek: I recently helped my partner migrate 20 years of emails from a cloud provider to a private server. The reasons why are not as interesting as some of the "behavoirs" of data in the cloud observed by my non-technical partner. For one, "downloading" emails via IMAP, is not downloading anything... the data is by all definitions: "Ephemeral". 
+
+20 years of emails translates to 225,000 emails (or millions of parameters), or ~50gb of storage. This "compact" dataset was able to move and be ingested by applications (email clients) in a reasonable amount of time, without leaving behind traces of its raw data (unless done so explicility by the end-user).
+
+Of course data in transit is susceptible to man in the middle attacks and therefore gains no advantage from being ephemeral in this scenario. Training data sets, particually ones consiting of high value PII, would benefit from this behavoir.
+
+Lastly, as a long time hardware security nerd, having deployed Maraduer several times in training excersises- the idea of an ephemeral honey pot dataset, sounds like it could be a valuable tool for Blue Teams to bait and capture attackers.
 
 
 # APPROACH
@@ -67,7 +67,11 @@ Some "prior research", not all related, but may help think out side of the box..
 - They ask specifically if we need/will use OpenAI credits. Can we make this work some how? Im sure there is a bias there.
 
 # TIMELINE AND BUDGET
-Current milestones?
+## Please describe how the funds will be used for your project, and outline how you arrived at the value *
 - Setup test environment, including "training set" or base "user-data" set to work from. Maybe we could use an existing "stolen" and "dumped" dataset?
 - Other test environment needs: dbt, aws/snowflake? openai? Some basic Red Team/Blue Team tooling, probably just a kali box that we attack our environment and test enumeration and exfiltration of the honeypot.
 - I guess after this is all setup, we just need to test and iterate until we think we can or cannot achieve the desired outcome.
+
+## Please provide a roadmap for the project on a one year time horizon*
+
+![alt text](roadmap_r1.png)
