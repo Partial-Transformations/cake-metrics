@@ -34,7 +34,7 @@ A couple of thoughts from Derek:
 - While listing these out- It made me think- what if Blue Teams employed more reverse red team tactics? To a degree this is a Purple Team- but how many of these actually exist in practice?
 - Lastly, do we deploy a reinforcement approach to enhance the output based on real attack data?
 
-![alt text](approach_r1.png)
+![alt text](approach_r2.png)
 
 # ML/AI REQUIREMENTS
 
