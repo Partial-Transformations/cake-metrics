@@ -50,7 +50,12 @@ A couple of thoughts from Derek:
 - While listing these out- It made me think- what if Blue Teams employed more reverse red team tactics? To a degree this is a Purple Team- but how many of these actually exist in practice?
 - Lastly, do we deploy a reinforcement approach to enhance the output based on real attack data?
 
-![alt text](approach_r2.png)
+## INTERESTING TOOLS
+- https://github.com/telekom-security/tpotce
+- https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
+- https://github.com/SwiftOnSecurity/sysmon-config
+
+![alt text](approach_r3.png)
 
 # GENERAL REQUIREMENTS/HYPOTHESES
 Area to break down some of the big challenges and how we plan to tactle them. For example, how will we QA that none of the rows generated are lazy duplicates of real data?
