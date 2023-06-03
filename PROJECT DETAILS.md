@@ -18,12 +18,12 @@ Blue Teams could buy themsevles time or completely trick attackers by deploying 
 # APPROACH
 We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
 
+## USE OF OPEN AI
+Catagorize and label existing data sets and assit in the generation of honey pots.
+
 ## DIAGRAM
 
 ![alt text](approach.png)
-
-## USE OF OPEN AI
-Catagorize and label existing data sets and assit in the generation of honey pots.
 
 # TIMELINE AND BUDGET
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
