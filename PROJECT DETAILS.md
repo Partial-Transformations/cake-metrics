@@ -27,18 +27,6 @@ Derek and Lu first me working together on an internal tool that analyzed real ti
 
 For Derek, he has always had an interest in Cybersecurity and even prior to the current advent of Consumer AI, was part of the Pwnagotchi/Bettercap communities, as well as endevors to create distributed ML processing of WPA encryption. He currently also consults for Fueled, a digital transformation agency, where he guides clients through data/analytics implementations.
 
-From Derek: 
-
-## INSPIRATION
-From Derek: I recently helped my partner migrate 20 years of emails from a cloud provider to a private server. The reasons why are not as interesting as some of the "behavoirs" of data in the cloud observed by my non-technical partner. For one, "downloading" emails via IMAP, is not downloading anything... the data is by all definitions: "Ephemeral". 
-
-20 years of emails translates to 225,000 emails (or millions of parameters), or ~50gb of storage. This "compact" dataset was able to move and be ingested by applications (email clients) in a reasonable amount of time, without leaving behind traces of its raw data (unless done so explicility by the end-user).
-
-Of course data in transit is susceptible to man in the middle attacks and therefore gains no advantage from being ephemeral in this scenario. Training data sets, particually ones consiting of high value PII, would benefit from this behavoir.
-
-Lastly, as a long time hardware security nerd, having deployed Maraduer several times in training excersises- the idea of an ephemeral honey pot dataset, sounds like it could be a valuable tool for Blue Teams to bait and capture attackers.
-
-
 # APPROACH
 A couple of thoughts from Derek:
 - I would like to avoid creating a "training set" from their existing data and resulting in a duplicate set, ie duplicate risk.
