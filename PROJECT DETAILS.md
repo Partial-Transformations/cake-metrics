@@ -55,7 +55,9 @@ A couple of thoughts from Derek:
 - https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
 - https://github.com/SwiftOnSecurity/sysmon-config
 
-![alt text](approach_r3.png)
+## ARCHITECTURE DIAGRAM
+
+![alt text](approach_r4.png)
 
 # GENERAL REQUIREMENTS/HYPOTHESES
 Area to break down some of the big challenges and how we plan to tactle them. For example, how will we QA that none of the rows generated are lazy duplicates of real data?
