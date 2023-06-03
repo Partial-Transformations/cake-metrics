@@ -1,22 +1,41 @@
 # PROJECT DETAILS
-Project Lead: Derek Burgess
+Project Members: 
+- Derek Burgess
+- Lu Zhu
 
-Email: contact@derekburgess.com
-
+Email: contact@partialtransformations.com
 Phone: +1 412 417 9435
-
 URL: partialtransformations.com
 
-
-Project Member: Lu Zhu
-
-Role: CTO
-
-Email:
-
-
 # SUMMARY
-A toolset/framework for creating honeypot datasets (or, "rickroll data models") and environments. Think Marauder , but for Blue Teams. The basic idea would be to maintain this as a component of CI/CD and Sec, or deploy during an event to create confusion for attackers by misdirecting them to log-noisy, but high value looking network assets/data sets.
+A toolset/framework for creating honeypot datasets.  Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will leverage the OpenAI API to help analyze datasets and create distributions that can be use to generate these honey pots.
+
+# HYPOTHESES
+Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
+
+# APPROACH
+We will begin by collecting various existing data sets from known security breeches. Many of these are readibly available in places like GitHub and Pastebin. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
+
+## DIAGRAM
+
+![alt text](approach.png)
+
+## USE OF OPEN AI
+Catagorize and label existing data sets and assit in the generation of honey pots.
+
+# TIMELINE AND BUDGET
+## Please describe how the funds will be used for your project, and outline how you arrived at the value *
+If we use GPT4, at the current cost per 1000/tokens- if we ingest breeched data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
+
+We would approach this by not ingesting large data sets each time, but instead reviewing data set scheme and testing smaller chunks of data sets to determine viabiliy and furth reduce the overall cost.
+
+Aside from using OpenAI credits for the API usecases describe above. We will also need funding to spin up infrastructure that mimics a traditional defenders "Environment", and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
+
+Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets and the infrastructure to test the hypothesis.
+
+## Please provide a roadmap for the project on a one year time horizon*
+
+![alt text](roadmap.png)
 
 # THE TEAM
 ## Derek Burgess
@@ -26,49 +45,3 @@ With 15 years of experience across IT. Derek leads clients through the challenge
 Derek and Lu first met working together on an internal tool that analyzed real time data from manufacutirng facilities and provided real time scheduling & production insights back to operators, managers, and other automation tools up/down stream.
 
 For Derek, he has always had an interest in Cybersecurity and even prior to the current advent of Consumer AI, has been part of the Pwnagotchi/Bettercap communities, as well as endevors to create distributed ML processing of WPA encryption. He currently also consults for Fueled, a digital agency, where he guides clients through data/analytics strategy and implementations.
-
-# APPROACH
-A couple of thoughts from Derek:
-- I would like to avoid creating a "training set" from their existing data and resulting in a duplicate set, ie duplicate risk.
-- The way marauder works, it does not use AI/ML, it is a straight duplicate of network names... for this project, straight duplicates or even jumbled duplicates, would be of no value.
-- To me, the goal would be to ingest and use an emphemeral training set, and even I accept that we will run into limits around training and output.
-- How do we best verify the output dataset does not contain any false negatives, i.e. the AI just spit out a random dupe? or lazyily mixed two records together.
-- Typical high-value data fields; PII, Names, Addresses, Contact Details, Payment Methods, Private Content.
-- The private content aspect is interesting because we could also explore a honeypot "juicy-content", that looks like a data set but literally contains the code to change dynamically once copied or moved.
-- While listing these out- It made me think- what if Blue Teams employed more reverse red team tactics? To a degree this is a Purple Team- but how many of these actually exist in practice?
-- Lastly, do we deploy a reinforcement approach to enhance the output based on real attack data?
-
-## INTERESTING TOOLS
-- https://github.com/telekom-security/tpotce
-- https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon
-- https://github.com/SwiftOnSecurity/sysmon-config
-
-## ARCHITECTURE DIAGRAM
-
-![alt text](approach_r4.png)
-
-# GENERAL REQUIREMENTS/HYPOTHESES
-Area to break down some of the big challenges and how we plan to tactle them. For example, how will we QA that none of the rows generated are lazy duplicates of real data?
-
-From Derek: My hypothesis is that Blue Teams could buy themsevles time, or completely trick attackers, by deploying honeypot network topology and data. To increase the perceieved value and the raise the level of deception- Blue Teams could also deploy an internal toolset that ingests breech data and event logs to personalize training data and output.
-
-## PRIOR RESEARCH
-Some "prior research", not all related, but may help think out side of the box...
-- https://arxiv.org/abs/2009.11208
-- https://www.hindawi.com/journals/scn/2020/8865474/
-- https://www.hindawi.com/journals/scn/2019/2627608/
-- https://www.rapid7.com/blog/post/2016/02/29/the-yellow-brick-road-to-machine-learning-with-honeypot-data-our-lessons-learned/
-
-
-## USE OF OPEN AI
-- They ask specifically if we need/will use OpenAI credits. Can we make this work some how? Im sure there is a bias there.
-
-# TIMELINE AND BUDGET
-## Please describe how the funds will be used for your project, and outline how you arrived at the value *
-- Setup test environment, including "training set" or base "user-data" set to work from. Maybe we could use an existing "stolen" and "dumped" dataset?
-- Other test environment needs: dbt, aws/snowflake? openai? Some basic Red Team/Blue Team tooling, probably just a kali box that we attack our environment and test enumeration and exfiltration of the honeypot.
-- I guess after this is all setup, we just need to test and iterate until we think we can or cannot achieve the desired outcome.
-
-## Please provide a roadmap for the project on a one year time horizon*
-
-![alt text](roadmap_r1.png)
