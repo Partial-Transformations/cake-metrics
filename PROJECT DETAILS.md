@@ -10,13 +10,13 @@ Phone: +1 412 417 9435
 URL: partialtransformations.com
 
 # SUMMARY
-A toolset/framework for creating honeypot datasets.  Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will leverage the OpenAI API to help analyze datasets and create distributions that can be use to generate these honey pots.
+A toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will leverage existing breeched data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot.
 
 # HYPOTHESES
 Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
 
 # APPROACH
-We will begin by collecting various existing data sets from known security breeches. Many of these are readibly available in places like GitHub and Pastebin. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
+We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
 
 ## DIAGRAM
 
@@ -31,9 +31,9 @@ If we use GPT4, at the current cost per 1000/tokens- if we ingest breeched data 
 
 We would approach this by not ingesting large data sets each time, but instead reviewing data set scheme and testing smaller chunks of data sets to determine viabiliy and furth reduce the overall cost.
 
-Aside from using OpenAI credits for the API usecases describe above. We will also need funding to spin up infrastructure that mimics a traditional defenders "Environment", and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
+Aside from using OpenAI credits for the usecases describe above, we will also need funding to spin up infrastructure that mimics a traditional defenders "Environment". This will help us validate the approach and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
 
-Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets and the infrastructure to test the hypothesis.
+Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets and the infrastructure to validate our hypothesis.
 
 ## Please provide a roadmap for the project on a one year time horizon*
 
