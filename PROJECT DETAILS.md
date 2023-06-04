@@ -18,12 +18,19 @@ Blue Teams could buy themsevles time or completely trick attackers by deploying 
 # APPROACH
 We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
 
-## USE OF OPEN AI
-Catagorize and label existing data sets and assit in the generation of honey pots.
-
 ## DIAGRAM
 
 ![alt text](approach.png)
+
+## NON BREECH DATA
+Using breech data, even if left in a public place like Pastbin, is still a huge risk and could be considered unethical by many. A longer but purely AI based approach could be to isolate the traits as individual efforts and create data sets for each- Working with OpenAI, each trait could be developed to a point that when combined into a final data set, looks like a realistic database.
+
+## DIAGRAM
+
+![alt text](approach_nbd.png)
+
+## USE OF OPEN AI
+Catagorize and label existing data sets and assit in the generation of honey pots.
 
 # TIMELINE AND BUDGET
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
@@ -33,7 +40,7 @@ We would approach this by not ingesting large data sets each time, but instead r
 
 Aside from using OpenAI credits for the usecases describe above, we will also need funding to spin up infrastructure that mimics a traditional defenders "Environment". This will help us validate the approach and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
 
-Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets and the infrastructure to validate our hypothesis.
+Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and the infrastructure to validate our hypothesis.
 
 ## Please provide a roadmap for the project on a one year time horizon*
 
