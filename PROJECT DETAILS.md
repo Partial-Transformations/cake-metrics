@@ -32,6 +32,13 @@ Using breech data, even if left in a public place like Pastbin, is still a huge 
 ## USE OF OPEN AI
 Catagorize and label existing data sets and assit in the generation of honey pots.
 
+## TESTING ENVIRONMENT
+We will seek to create a simplified but realistic testing environment modeled on Blue Team principals. We will use descrete methods of capturing logs to demonstrate how an attacker would interact with the honey pot and leave behind evidence of that activity. We would also like to open the test environment to public attack for the purpose of improving on the honey pots and the infrastructure. We have not specified in the diagram below how we intend to implement our solution against the CI/CD pipeline and that is because we are resevering time during our testing to idenfity where and how this toolset can be injected into infrasturcture.
+
+## DIAGRAM
+
+![alt text](testing_env.png)
+
 # TIMELINE AND BUDGET
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
 If we use GPT4, at the current cost per 1000/tokens- if we ingest breeched data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
@@ -40,7 +47,7 @@ We would approach this by not ingesting large data sets each time, but instead r
 
 Aside from using OpenAI credits for the usecases describe above, we will also need funding to spin up infrastructure that mimics a traditional defenders "Environment". This will help us validate the approach and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
 
-Therefore we estimate that we would need roughly $25,000 to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and the infrastructure to validate our hypothesis.
+Therefore we estimate that we would need roughly $25,000 -- $20,000 of which could be OpenAI credits, to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and $5000 to cover the cost of the setup/maintainence of our testing infrastructure (~$1,000 upfront with variable cloud costs).
 
 ## Please provide a roadmap for the project on a one year time horizon*
 
