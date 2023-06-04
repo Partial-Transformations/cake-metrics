@@ -10,10 +10,10 @@ Phone: +1 412 417 9435
 URL: partialtransformations.com
 
 # SUMMARY
-A toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will leverage existing breeched data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot.
+A toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. Leveraging the traits of existing breeched data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot.
 
 # HYPOTHESES
-Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
+The concept of a honey pot within the context of Cybersecurity is not new, but the cost of creating realistic honey pots is high- Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
 
 # APPROACH
 We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
