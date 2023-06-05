@@ -52,7 +52,7 @@ We will seek to create a simplified but realistic testing environment modeled on
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
 If we use GPT4, at the current cost per 1000/tokens- if we ingest data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
 
-We would approach this by not ingesting large data sets each time, but instead reviewing data set scheme and testing smaller chunks of data sets to determine viabiliy and furth reduce the overall cost.
+We would approach this by not ingesting large data sets each time, but instead reviewing data set scheme and testing smaller chunks of data sets to determine viability and further reduce the overall cost.
 
 Aside from using OpenAI credits for the use cases describe above, we will also need funding to spin up infrastructure that mimics a traditional defenders "Environment". This will help us validate the approach and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
 
