@@ -10,7 +10,7 @@ Phone: +1 412 417 9435
 URL: partialtransformations.com
 
 # SUMMARY
-Cake Metrics is a toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. Leveraging the traits of existing breached data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot. Additionally, the potential to increase deception through the use of AI has other use-cases, like obfascation, we intend to explore.
+Cake Metrics is a toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will explore the best methods for extracting traits from existing breached data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot. Additionally, the potential to increase deception through the use of AI has other use-cases, like obfascation, which we intend to explore.
 
 # HYPOTHESES
 The concept of a honey pot within the context of Cybersecurity is not new, however, because the cost of creating sudo-realistic honey pots is high, honey pots rarely see deployment- We posit that ML/AI could be applied to the creation of both honey pot training data as well as the honey pot data sets themselves, reducing the resources (time & cost), and increasing their level of deception.  Blue Teams could buy themsevles time or trick attackers by deploying realistic AI generated honeypot data sets.
@@ -52,7 +52,7 @@ We will seek to create a simplified but realistic testing environment modeled on
 
 # TIMELINE AND BUDGET
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
-If we use GPT4, at the current cost per 1000/tokens- if we ingest breached data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
+If we use GPT4, at the current cost per 1000/tokens- if we ingest data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
 
 We would approach this by not ingesting large data sets each time, but instead reviewing data set scheme and testing smaller chunks of data sets to determine viabiliy and furth reduce the overall cost.
 
