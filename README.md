@@ -66,9 +66,7 @@ Therefore we estimate that we would need roughly $25,000 -- $20,000 of which cou
 
 # THE TEAM
 ## Derek Burgess
-With 15 years of experience across IT. Derek leads clients through the challenges of digital transformation concerning data, privacy, and security. Having worked a wide range of relevant roles across; Help Desk, Product Design, Product Management, and Engineering, Derek has always pushed to introduce more data-driven techniques to those practices, while partnering across disciplines to design tooling and automation that empower teams to become more data-driven.
+With 15 years of experience across IT. Derek leads clients through the challenges of digital transformation concerning behavorial data, privacy, and security. Having worked a wide range of relevant roles across; Help Desk, Product Design, Product Management, and Engineering, Derek has always pushed to introduce more data-driven techniques to those practices, while partnering across disciplines to design tooling and automation that empower teams to become more data-driven.
 
-## WHY US
-Derek and Lu first met working together on an internal tool that analyzed real time data from manufacutirng facilities and provided real time scheduling & production insights back to operators, managers, and other automation tools up/down stream.
-
-For Derek, he has always had an interest in Cybersecurity and even prior to the current advent of Consumer AI, has been part of the Pwnagotchi/Bettercap communities, as well as endevors to create distributed ML processing of WPA encryption. He currently also consults for Fueled, a digital agency, where he guides clients through data/analytics strategy and implementations.
+## Lu Zhu
+Lu has over a decade of experience in the tech industry working at startups across domains including audio streaming, manufacturing, and delivery. He has an academic background in machine learning, and has worked as a software engineer, founder, and most recently as an engineering leader with expertise in experimentation and data best practices.
