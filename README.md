@@ -15,6 +15,17 @@ A toolset/framework for creating honeypot data sets. Blue Teams would maintain t
 # HYPOTHESES
 The concept of a honey pot within the context of Cybersecurity is not new, but the cost of creating realistic honey pots is high- Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
 
+## QUESTIONS WE SEEK TO ANSWER
+- Can we create training sets from existing data, and what risks come with that?
+- Can we create training sets from distributions through OpenAI?
+- Can we generate realistic looking honey pots from our training sets and OpenAI?
+- Which training sets perform better at generating Honey Pots?
+- Where in a defenders system does this best live?
+- What alterantive use-cases exist?
+- Can an attacker use these honey pots against the defenders?
+- How can we validate real data from a realistic honey pot?
+- Can we obfascate data sets using honey pots?
+
 # APPROACH
 We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
 
