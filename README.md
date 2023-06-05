@@ -59,7 +59,7 @@ Aside from using OpenAI credits for the use cases describe above, we will also n
 Therefore we estimate that we would need roughly $25,000 -- $20,000 of which could be OpenAI credits, to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and $5000 to cover the cost of the setup/maintenance of our testing infrastructure (~$1,000 upfront with variable cloud costs).
 
 ## Please provide a roadmap for the project on a one year time horizon*
-We intend to use 1 month to setup infrastructure and collect/prepare data. An additional 1-2 months to test our hypothesis and produce a working outcome. Additional 1-2 months to refine the approach, collect feedback, and launch to the public. We mentioned DEFCON approaching in August, a great opportunity to gather feedback and promote the project.
+We intend to use 1 month to setup infrastructure and collect/prepare data. An additional 1-2 months to test our hypothesis and produce a working outcome. Additional 1-2 months to refine the approach, collect feedback, and launch to the public. We mentioned DEFCON approaching in August, a great opportunity to gather feedback and promote the project. We intend to support the project for the foreseeable future.
 
 ![alt text](roadmap.png)
 
