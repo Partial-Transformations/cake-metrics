@@ -56,7 +56,7 @@ We would approach this by not ingesting large data sets each time, but instead r
 
 Aside from using OpenAI credits for the use cases describe above, we will also need funding to spin up infrastructure that mimics a traditional defenders "Environment". This will help us validate the approach and demonstrate how this toolset can be used in practice by provide examples and documentation that would support licensing or public release.
 
-Therefore we estimate that we would need roughly $25,000 -- $20,000 of which could be OpenAI credits, to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and $5000 to cover the cost of the setup/maintainence of our testing infrastructure (~$1,000 upfront with variable cloud costs).
+Therefore we estimate that we would need roughly $25,000 -- $20,000 of which could be OpenAI credits, to cover the costs of processing up to 5 large data sets using GPT3.5-turbo and $5000 to cover the cost of the setup/maintenance of our testing infrastructure (~$1,000 upfront with variable cloud costs).
 
 ## Please provide a roadmap for the project on a one year time horizon*
 
