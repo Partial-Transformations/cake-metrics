@@ -5,8 +5,6 @@ Project Members:
 
 Email: contact@partialtransformations.com
 
-Phone: +1 412 417 9435
-
 URL: partialtransformations.com
 
 # SUMMARY
