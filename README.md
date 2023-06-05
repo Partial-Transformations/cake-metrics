@@ -33,7 +33,7 @@ We will begin by collecting various existing data sets from known security breac
 
 ![alt text](approach.png)
 
-## NON BREaCH DATA
+## NON BREACH DATA
 Using breach data, even if left in a public place like Pastbin, is still a huge risk and could be considered unethical by many. A longer but purely AI based approach could be to isolate the traits as individual efforts and create data sets for each- Working with OpenAI, each trait could be developed to a point that when combined into a final data set, looks like a realistic database.
 
 ## DIAGRAM
