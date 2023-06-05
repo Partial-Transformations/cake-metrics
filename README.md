@@ -10,24 +10,24 @@ Phone: +1 412 417 9435
 URL: partialtransformations.com
 
 # SUMMARY
-A toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. Leveraging the traits of existing breeched data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot.
+Cake Metrics is a toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. Leveraging the traits of existing breeched data to create training sets that can be ingested by OpenAI to increase the deception of the honey pot. Additionally, the potential to increase deception through the use of AI has other use-cases, like obfascation, we intend to explore.
 
 # HYPOTHESES
-The concept of a honey pot within the context of Cybersecurity is not new, but the cost of creating realistic honey pots is high- Blue Teams could buy themsevles time or completely trick attackers by deploying honeypot data sets. Blue Teams could achieve this by deploying an internal toolset that ingests breech data to increase the perceieved value and the raise the level of deception, or "realisticness" of the honey pot.
+The concept of a honey pot within the context of Cybersecurity is not new, however, because the cost of creating sudo-realistic honey pots is high, honey pots rarely see deployment- We posit that ML/AI could be applied to the creation of both honey pot training data as well as the honey pot data sets themselves, reducing the resources (time & cost), and increasing their level of deception.  Blue Teams could buy themsevles time or trick attackers by deploying realistic AI generated honeypot data sets.
 
 ## QUESTIONS WE SEEK TO ANSWER
 - Can we create training sets from existing data, and what risks come with that?
-- Can we create training sets from distributions through OpenAI?
+- Can we create training sets from distributions assisted by OpenAI?
 - Can we generate realistic looking honey pots from our training sets and OpenAI?
-- Which training sets perform better at generating Honey Pots?
-- Where in a defenders system does this best live?
+- Which training sets perform better at generating realistic Honey Pots?
+- Where in a defenders system does this tool best live?
 - What alterantive use-cases exist?
 - Can an attacker use these honey pots against the defenders?
 - How can we validate real data from a realistic honey pot?
 - Can we obfascate data sets using honey pots?
 
 # APPROACH
-We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce tailored Honey Pot data sets for placement within an defenders infrastrcutre.
+We will begin by collecting various existing data sets from known security breeches. We will process these data sets through a combination of OpenAI API and statics tooling to produce an array of distrubtions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce Honey Pot data sets for placement within an defenders infrastrcutre.
 
 ## DIAGRAM
 
@@ -41,7 +41,7 @@ Using breech data, even if left in a public place like Pastbin, is still a huge 
 ![alt text](approach_nbd.png)
 
 ## USE OF OPEN AI
-Catagorize and label existing data sets and assit in the generation of honey pots.
+Catagorize and label existing data sets and assit in the generation of honey pots. OpenAI would also remain part of the toolset, as we seek to provide defneders with the tooling and documentaton to spin this service up and create their own tailored honey pots.
 
 ## TESTING ENVIRONMENT
 We will seek to create a simplified but realistic testing environment modeled on Blue Team principals. We will use descrete methods of capturing logs to demonstrate how an attacker would interact with the honey pot and leave behind evidence of that activity. We would also like to open the test environment to public attack for the purpose of improving on the honey pots and the infrastructure. We have not specified in the diagram below how we intend to implement our solution against the CI/CD pipeline and that is because we are resevering time during our testing to idenfity where and how this toolset can be injected into infrasturcture.
