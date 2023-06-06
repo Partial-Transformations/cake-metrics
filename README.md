@@ -48,6 +48,10 @@ We will seek to create a simplified but realistic testing environment modeled on
 
 ![alt text](testing_env.png)
 
+We will initially start by emulating a similar attack chain to this common approach. In turn, deploying Blue Team tooling in places to gether data and improve on the application and realisticness of the Honey Pot.
+
+![alt text](reaction_lab.png)
+
 # TIMELINE AND BUDGET
 ## Please describe how the funds will be used for your project, and outline how you arrived at the value *
 If we use GPT4, at the current cost per 1000/tokens- if we ingest data sets that look roughly like 2 billion tokens (~75 columns x 20-30 million records on average), then we would need ~$120,000 per data set to process it through the OpenAI API. If we use GPT3.5-turbo, at the current cost per 1000/tokens, we can bring the cost down to $4000 per data set.
