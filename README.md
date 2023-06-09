@@ -39,16 +39,16 @@ Using breach data, even if left in a public place like Pastebin, is still a huge
 ![alt text](approach_nbd.png)
 
 ## USE OF OPEN AI
-Catagorize and label existing data sets and assist in the generation of honey pots. OpenAI would also remain part of the toolset, as we seek to provide defenders with the tooling and documentaton to spin this service up and create their own tailored honey pots.
+Categorize and label existing data sets and assist in the generation of honey pots. OpenAI would also remain part of the toolset, as we seek to provide defenders with the tooling and documentation to spin this service up and create their own tailored honey pots.
 
 ## TESTING ENVIRONMENT
-We will seek to create a simplified but realistic testing environment modeled on Blue Team principals. We will use discrete methods of capturing logs to demonstrate how an attacker would interact with the honey pot and leave behind evidence of that activity. We would also like to open the test environment to public attack for the purpose of improving on the honey pots and the infrastructure. We have not specified in the diagram below how we intend to implement our solution against the CI/CD pipeline and that is because we are reserving time during our testing to identify where and how this toolset can be injected into infrasturcture.
+We will seek to create a simplified but realistic testing environment modeled on Blue Team principals. We will use discrete methods of capturing logs to demonstrate how an attacker would interact with the honey pot and leave behind evidence of that activity. We would also like to open the test environment to public attack for the purpose of improving on the honey pots and the infrastructure. We have not specified in the diagram below how we intend to implement our solution against the CI/CD pipeline and that is because we are reserving time during our testing to identify where and how this toolset can be injected into infrastructure.
 
 ## DIAGRAM
 
 ![alt text](testing_env.png)
 
-We will initially start by emulating a similar attack chain to this common approach. In turn, deploying Blue Team tooling in places to gether data and improve on the application and realisticness of the Honey Pot.
+We will initially start by emulating a similar attack chain to this common approach. In turn, deploying Blue Team tooling in places to gather data and improve on the application and realistic-ness of the Honey Pot.
 
 ![alt text](reaction_lab.png)
 
@@ -69,7 +69,7 @@ We intend to use 1 month to setup infrastructure and collect/prepare data. An ad
 
 # THE TEAM
 ## Derek Burgess
-With 15 years of experience across IT. Derek leads clients through the challenges of digital transformation concerning behavorial data, privacy, and security. Having worked a wide range of relevant roles across; Help Desk, Product Design, Product Management, and Engineering, Derek has always pushed to introduce more data-driven techniques to those practices, while partnering across disciplines to design tooling and automation that empower teams to become more data-driven.
+With 15 years of experience across IT. Derek leads clients through the challenges of digital transformation concerning behavioral data, privacy, and security. Having worked a wide range of relevant roles across; Help Desk, Product Design, Product Management, and Engineering, Derek has always pushed to introduce more data-driven techniques to those practices, while partnering across disciplines to design tooling and automation that empower teams to become more data-driven.
 
 ## Lu Zhu
 Lu has over a decade of experience in the tech industry working at startups across domains including audio streaming, manufacturing, and delivery. He has an academic background in machine learning, and has worked as a software engineer, founder, and most recently as an engineering leader with expertise in experimentation and data best practices.
