@@ -8,16 +8,7 @@ For this project, we define our training sets as follows:
 
 ### Schema Training Set
 
-To create this training set, we will need to collect examples of database schemas that represent real-world configurations. We will extract the properties from these schemas, but not the individual PII associated with the records. The properties (now tokens), will be used to represent a vast example of these real-world configurations.
-
-Strategies for creating this data set:
-- Public examples of database schemas which have been shared willingly. An example would be a dev blog where the development team has exposed some of their schema.
-- Public examples of database schemas which have been shared unwillingly. An example would be a breached data set, left in a public space.
-- Scrape API documentation and rebuild database schema from model defintions.
-- Rebuild database schemas from API activity collected using tools like Burp.
-
-Commentary:
-We initially believed we could approach this entirelly using breached datasets. Initial research suggests that we can leverage these, but there may not be enough useful examples to build a training set from. After exploring OSINT tools and building a simple Port Scanner- it dawned on me that we could approach the problem through the lense of OSINT by reverse engineering open API's through their open documentation and scanning techniques.
+To create this training set we will need to collect examples of database schemas that represent real-world configurations. We will extract the properties from these schemas, but not the individual PII associated with the records.
 
 #### Real-world configurations
 
