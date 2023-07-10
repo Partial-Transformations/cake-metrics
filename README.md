@@ -8,7 +8,7 @@ Email: contact@partialtransformations.com
 URL: partialtransformations.com
 
 # SUMMARY
-Cake Metrics is a toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will explore the best methods for extracting traits from existing data sets for the creation training sets that can be fine-tuned by OpenAI to increase the deception of the honeypot. Additionally, the potential to increase deception through the use of AI has other use-cases, like obfuscation, which we intend to explore further down the road.
+Cake Metrics is a toolset/framework for creating honeypot data sets. Blue Teams would maintain this as a component of their CI/CD and/or IT Security Tooling. We will explore the best methods for extracting traits from existing data sets for the creation of training sets that can be fine-tuned by OpenAI to increase the deception of the honeypot. Additionally, the potential to increase deception through the use of AI has other use-cases, like obfuscation, which we intend to explore further down the road.
 
 # HYPOTHESES
 The concept of a honeypot within the context of Cybersecurity is not new, however, because the cost of creating sudo-realistic honeypots has been high, honeypots have rarely see serious deployment- We posit that ML/AI could be applied for the creation of training data, PII, as well as the final honeypot data sets(databases), reducing the resources (time & cost), and increasing the level of deception.  Blue Teams could buy themselves time or trick attackers by deploying realistic AI generated honeypot data bases to production, while silently observing activity.
@@ -28,7 +28,7 @@ The concept of a honeypot within the context of Cybersecurity is not new, howeve
 At first we would like to attempt to collect various existing data sets from known security breaches. We plan to process these data sets through a combination of OpenAI API and statistics tooling to produce an array of distributions that represent the traits that make up realistic looking data sets. From here, we will ingest these transformed data sets and produce Honeypot data sets for placement within an defender's infrastructure.
 
 Updated Commentary:
-We initially believed we could approach this entirely using breached datasets. Initial research suggests that we can leverage these, but there may not be enough useful examples to build a training set from. After exploring OSINT tools and building a simple Port Scanner- it dawned on me that we could approach the problem through the lense of OSINT by reverse engineering open API's through their open documentation and scanning techniques.
+We initially believed we could approach this entirely using breached datasets. Initial research suggests that we can leverage these, but there may not be enough useful examples to build a training set from. After exploring OSINT tools and building a simple Port Scanner- it dawned on me that we could approach the problem through the lens of OSINT by reverse engineering open API's through their open documentation and scanning techniques.
 
 Strategies for creating this data set:
 - Public examples of database schemas which have been shared willingly. An example would be a dev blog where the development team has exposed some of their schema.
@@ -54,7 +54,7 @@ Additionally, we intend to explore how the use of OpenAI could amplify our resul
 - Fine-tuning using our schema training set to generate honeypot schemas.
 - Generation of realistic looking PII to complete the honeypot dataset.
 
-We also believe that OpenAI could remain part of the toolset. As we intend to provide defenders with the tooling and documentation spin this service up and create their own tailored honeypots, a stable AI API would be beneficial to that cause.
+We also believe that OpenAI could remain part of the toolset. As we intend to provide defenders with the tooling and documentation to spin this service up and create their own tailored honeypots, a stable AI API would be beneficial to that cause.
 
 ## TESTING ENVIRONMENT
 We will seek to create a simplified but realistic testing environment modeled on Blue Team principals. We will use discrete methods of capturing logs to demonstrate how an attacker would interact with the honeypot and leave behind evidence of that activity. We would also like to open the test environment to public attack for the purpose of improving on the honeypots and the infrastructure. We have not specified in the diagram below how we intend to implement our solution against the CI/CD pipeline and that is because we are reserving time during our testing to identify where and how this toolset can be injected into infrastructure.
